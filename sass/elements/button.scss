@@ -1,0 +1,38 @@
+/*
+ *  Styling for the <button> tag
+ */
+ 
+$button-color: $primary-color !default;
+$button-text-color: $primary-text-color !default;
+
+$button-accent-color: $accent-color !default;
+$button-accent-text-color: $accent-text-color !default;
+
+$button-text-size: 1em !default;
+
+$button-font-stack: $body-font-stack !default;
+$button-font-weight: $body-font-weight !default;
+
+$button-border-width: 0px !default;
+$button-border-radius: 16px !default;
+$button-border-color: $border-color !default;
+
+button {
+	background-color: $button-color;
+	color: $button-text-color;
+	
+	font-family: $button-font-stack;
+	font-weight: $button-font-weight;
+	font-size: $button-text-size;
+	
+	border: $button-border-width solid $button-border-color;
+	border-radius: $button-border-radius;
+	
+	margin: 0;
+	padding: 2px 12px 2px 12px;
+}
+
+button.accent {
+	background-color: $button-accent-color;
+	color: $button-accent-text-color;
+}
