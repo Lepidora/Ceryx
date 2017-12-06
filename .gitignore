@@ -1,3 +1,14 @@
+# Project Ignore
+
+css/
+example/
+
+# Sass Ignore
+
+.sass_cache/
+*.scssc
+
+
 # Eclipse Ignore
 
 .metadata
