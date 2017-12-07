@@ -5,7 +5,11 @@
 //Reset
 @import 'reset/reset.scss';
 
+//Mixins
+@import 'mixins/gradient.scss';
+
 //Elements
+@import 'elements/heading.scss';
 @import 'elements/button.scss';
 
 //Widgets
