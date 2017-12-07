@@ -3,15 +3,19 @@
  */
  
 $button-color: $primary-color !default;
+$button-gradient-color: $primary-gradient-color !default;
 $button-text-color: $primary-text-color !default;
+$button-inverse-text-color: $primary-inverse-text-color !default;
 
 $button-accent-color: $accent-color !default;
+$button-accent-gradient-color: $accent-gradient-color !default;
 $button-accent-text-color: $accent-text-color !default;
+$button-accent-inverse-text-color: $accent-inverse-text-color !default;
 
 $button-text-size: 1em !default;
 
 $button-font-stack: $body-font-stack !default;
-$button-font-weight: $body-font-weight !default;
+$button-font-weight: $body-thin-font-weight !default;
 
 $button-border-width: 0px !default;
 $button-border-radius: 16px !default;
@@ -19,7 +23,7 @@ $button-border-color: $border-color !default;
 
 button {
 	background-color: $button-color;
-	color: $button-text-color;
+	color: $button-inverse-text-color;
 	
 	font-family: $button-font-stack;
 	font-weight: $button-font-weight;
@@ -35,4 +39,12 @@ button {
 button.accent {
 	background-color: $button-accent-color;
 	color: $button-accent-text-color;
+}
+
+button.gradient {
+	@include gradient($button-color, $button-gradient-color);
+}
+
+button.accent.gradient {
+	@include gradient($button-accent-color, $button-accent-gradient-color);
 }
