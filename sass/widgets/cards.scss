@@ -3,7 +3,7 @@
  */
 
 $card-width: 360px !default;
-$card-mini-width: 128px !default;
+$card-mini-size: 128px !default;
 $card-border-radius: 4px !default;
 
 .cards {
@@ -49,7 +49,10 @@ $card-border-radius: 4px !default;
 	
 	@extend .card;
 	
-	width: $card-mini-width;	
+	width: $card-mini-size;
+	height: $card-mini-size;
+	
+	padding: 0;
 }
 
 
