@@ -3,6 +3,7 @@
  */
 
 $card-width: 360px !default;
+$card-mini-width: 128px !default;
 $card-border-radius: 4px !default;
 
 .cards {
@@ -42,6 +43,13 @@ $card-border-radius: 4px !default;
     &>*:last-child {
         padding-bottom: 6px;
     }
+}
+
+.card-mini {
+	
+	@extend .card;
+	
+	width: $card-mini-width;	
 }
 
 
